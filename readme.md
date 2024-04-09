@@ -1,6 +1,6 @@
 ## Lakehouse On Your Laptop
 
-Some Blogs Covering Similar Exiercises:
+Some Blogs Covering Similar Exercises:
 - [Postgres --> Iceberg/Dremio --> Superset Dashboard](https://www.dremio.com/blog/from-postgres-to-dashboards-with-dremio-and-apache-iceberg/)
 - [SQLServer --> Iceberg/Dremio --> Superset Dashboard](https://www.dremio.com/blog/from-sqlserver-to-dashboards-with-dremio-and-apache-iceberg/)
 - [MongoDB --> Iceberg/Dremio --> Superset Dashboard](https://www.dremio.com/blog/from-mongodb-to-dashboards-with-dremio-and-apache-iceberg/)
@@ -33,7 +33,7 @@ docker compose up
 docker-compose up
 ```
 
-This will create all the containers specified in our `docker-compose.yml` if you ever need to shut them down in another terminal in the same folder just run:
+This will create all the containers specified in our `docker-compose.yml`. If you ever need to shut them down in another terminal in the same folder, run:
 
 ```shell
 docker compose down
