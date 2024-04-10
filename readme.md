@@ -7,6 +7,14 @@ Some Blogs Covering Similar Exiercises:
 - [AWS Glue --> Dremio --> Superset Dashboard](https://www.dremio.com/blog/bi-dashboards-with-apache-iceberg-using-aws-glue-and-apache-superset/)
 - [Running Graph QUeries on Iceberg Tables with Dremio & Puppygraph](https://www.dremio.com/blog/run-graph-queries-on-apache-iceberg-tables-with-dremio-puppygraph/)
 
+## Setting Up Your Environment
+
+You can use the direction below to setup a few lakehouse environment with reflections enabled, if you just want to spin up Dremio alone you can use the following command:
+
+```
+docker run -p 9047:9047 -p 31010:31010 -p 32010:32010 -p 45678:45678 -e DREMIO_JAVA_SERVER_EXTRA_OPTS=-Dpaths.dist=file:///opt/dremio/data/dist -e DREMIO_JAVA_EXTRA_OPTS=-Ddebug.addDefaultUser=true -e SERVER_GC_OPTS=-XX:+UseG1GC --name dremio_latest dremio/dremio-oss:latest
+```
+
 #### With Nessie/Minio/Dremio
 
 **Pre-Reqs:** Git, Docker & Docker-Compose installed
